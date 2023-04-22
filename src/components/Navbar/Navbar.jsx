@@ -1,5 +1,6 @@
 import React from 'react';
 import Btn from '../Utilities/Btn';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,16 +13,16 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav m-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Work Process</a>
+          <a className="nav-link active text-white" aria-current="page" href="#">Work Process</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Portfolio</a>
+          <NavLink to="/portfolio" className="nav-link active text-white" aria-current="page" href="#">Portfolio</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Contact</a>
+          <a className="nav-link active text-white" aria-current="page" href="#">Contact</a>
         </li>
       </ul>
       <form className="d-flex gap-2" role="search">

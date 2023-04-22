@@ -4,7 +4,7 @@ import Btn from './Btn';
 const CardsSet = props => {
     const {image, title, description, code_link, live_site, key} = props.data;
     return (            
-    <div className="col-md-5 col-lg-3">
+    <div className="col-md-3 col-lg-3">
       <div className="card h-100">
     <img src={image} className="card-img-top" alt="..." />
     <div className="card-body text-center p-4">

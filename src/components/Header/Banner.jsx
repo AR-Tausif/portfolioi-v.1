@@ -2,24 +2,24 @@ import React from 'react';
 // import { sortUserPlugins } from 'vite';
 import Btn from '../Utilities/Btn';
 let storeItems;
-const getStore = () =>{
+// const getStore = () =>{
 
-    const products = [
-        {id: 1, type: "Laptop", brand: "HP"},
-        {id: 2, type: "Mobile", brand: "Apple"},
-        {id: 3, type: "Laptop", brand: "Lenevo"},
-        {id: 4, type: "Mobile", brand: "Samsung"}
-    ];
-    storeItems = products;
-    localStorage.setItem("id", JSON.stringify(storeItems))
-    storeItems = JSON.parse(localStorage.getItem('id'));
-    for (const item of storeItems) {
-        item.id += 1;
-        console.log(item);
-    }
-    localStorage.setItem('id' , JSON.stringify(storeItems))
-    console.log(storeItems);
-}
+//     const products = [
+//         {id: 1, type: "Laptop", brand: "HP"},
+//         {id: 2, type: "Mobile", brand: "Apple"},
+//         {id: 3, type: "Laptop", brand: "Lenevo"},
+//         {id: 4, type: "Mobile", brand: "Samsung"}
+//     ];
+//     storeItems = products;
+//     localStorage.setItem("id", JSON.stringify(storeItems))
+//     storeItems = JSON.parse(localStorage.getItem('id'));
+//     for (const item of storeItems) {
+//         item.id += 1;
+//         console.log(item);
+//     }
+//     localStorage.setItem('id' , JSON.stringify(storeItems))
+//     console.log(storeItems);
+// }
 const Banner = () => {
     return (
         <div>
@@ -32,7 +32,7 @@ const Banner = () => {
                     <div className="mt-5 d-flex gap-2">
                         <Btn text="Resume" classes={"btn btn-primary p-3 px-5 fw-semibold"} />
                         <Btn text="Portfolio" classes="btn btn-outline-light p-3 px-5 fw-semibold" />
-                        <button onClick={getStore}>hit me</button>
+                        {/* <button onClick={getStore}>hit me</button> */}
                     </div>
                 </div>
                 <div className="w-md-100 ">
